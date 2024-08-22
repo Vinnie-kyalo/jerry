@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JERRY's Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(11, 234, 34);
+        }
+        header {
+            background-color: yellow;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            color: red;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav {
+            color: blue;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li:last-child {
+            margin-right: 0;
+        }
+        .cv-button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .cv-button:hover {
+            background-color: #0056b3;
+        }
+        .profile {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        .profile img {
+            width: 300px;
+            height: auto;
+            margin-right: 20px;
+            border-radius: 50%;
+            border: 5px solid #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .social-icons {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+        }
+        .social-icons i {
+            font-size: 24px;
+            margin-right: 10px;
+            color: #000;
+        }
+        .social-icons i:hover {
+            color: #007bff;
+        }
+        section {
+            padding: 20px;
+            border: 1px solid #ddd;
+            margin: 10px 0;
+        }
+        footer {
+            background-color: rgb(26, 214, 82);
+            text-align: center;
+            padding: 10px;
+        }
+        h1 {
+            color: blue;
+        }
+        h2 {
+            color: purple;
+            text-align: center;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 10px 0;
+        }
+        .hidden {
+            display: none;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact-form label {
+            margin-bottom: 5px;
+        }
+        .contact-form input, .contact-form textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .contact-form button {
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #0056b3;
+        }
+        .resume-section {
+            margin-bottom: 20px;
+        }
+        .education .school {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .school-logo {
+            width: 50px;
+            height: auto;
+            margin-right: 15px;
+        }
+        .school-info h3 {
+            margin: 0;
+            color: #007bff;
+        }
+        .school-info p {
+            margin: 5px 0;
+        }
+        .resume-section ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        .resume-section ul li {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">JERRY</div>
+    <nav>
+        <ul>
+            <li><a href="#HOME" onclick="showSection('HOME')">HOME</a></li>
+            <li><a href="#about-me" onclick="toggleSection('about-me')">ABOUT ME</a></li>
+            <li><a href="#RESUME" onclick="showSection('RESUME')">RESUME</a></li>
+            <li><a href="#PROJECT-PAGE" onclick="showSection('PROJECT-PAGE')">PROJECT PAGE</a></li>
+            <li><a href="#contact-me" onclick="showSection('contact-me')">CONTACT ME</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="HOME">
+        <div class="profile">
+            <img src="jal.jpg" alt="Profile Image">
+            <div>
+                <h4>Hi, I'm Jerry</h4>
+                <p>I'm Jerry Ouma, a website designer, digital content and marketing creator, a blogger, and a photographer.</p>
+                <div class="social-icons">
+                    <a href="https://youtube.com/@jalamo254?si=20Oyn1zEmXP09P6h" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://x.com/junive37147?t=AJDv5aX2Gj7ehJP2bifpTg&s=09" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://github.com/Jalamo-254" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/jerry-ouma-6045282b7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/ouma_kee?igsh=MWdnOW41MWI0ODh4eg==" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100090712794819&mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.tiktok.com/@codingke?_t=8oJSfhEKpGv&_r=1" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    <div><a href="MY CV.pdf" target="_blank" class="cv-button">Download CV</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about-me" class="hidden">
+        <p>I am currently designing my website portfolio, a digital marketing and content creator on various social platforms, i.e., YouTube, Facebook, X, and Instagram. I am also doing blogging on various platforms. I am also a photographer working with JK Studio photographing quality and clean pictures. Currently pursuing a Diploma in Information Technology at Pwani University with skills in programming languages such as HTML, CSS, and PHP, and also gaining more programming languages such as JavaScript, C, C++, Java, and Python.</p>
+        <h2>SKILLS</h2>
+        <p>These are the tools I use;</p>
+    </section>
+    <section id="RESUME" class="hidden">
+        <h1>Resume</h1>
+        <p>Here you can find my detailed resume:</p>
+        <a href="my resume.pdf" target="_blank" class="cv-button">Download Resume</a>
+
+        <h2>EDUCATION</h2>
+        <div class="resume-section">
+            <div class="education">
+                <div class="school">
+    <a href="https://www.pu.ac.ke/" target="_blank">
+        <img src="pwani-university-logo.jfif" alt="Pwani University Logo" class="school-logo">
+        <div class="school-info">
+            <h3>Pwani University</h3>
+            <p>Diploma in Information Technology</p>
+        </div>
+    </a>
+</div>
+<div class="school">
+    <a href="https://www.sirembehighschool.ac.ke/" target="_blank">
+        <img src="sirembe-high-logo.jfif" alt="Sirembe High School Logo" class="school-logo">
+        <div class="school-info">
+            <h3>Sirembe High School</h3>
+            <p>High School Diploma</p>
+        </div>
+    </a>
+</div>
+<div class="school">
+    <a href="https://www.wagwerprimaryschool.ac.ke/" target="_blank">
+        <img src="wagwer-primary-logo.jfif" alt="Wagwer Primary School Logo" class="school-logo">
+        <div class="school-info">
+            <h3>Wagwer Primary School</h3>
+            <p>Primary School Certificate</p>
+        </div>
+    </a>
+</div>
+
+            </div>
+        </div>
+
+        <h2>WORK</h2>
+        <div class="resume-section">
+            <ul>
+                <li>IT Support Specialist at [Company Name]</li>
+                <li>Web Developer at [Company Name]</li>
+                <li>Digital Marketing Specialist at [Company Name]</li>
+            </ul>
+        </div>
+
+        <h2>SPORTS</h2>
+        <div class="resume-section">
+            <ul>
+                <li>Handball - Team Captain</li>
+                <li>Volleyball - Team Member</li>
+            </ul>
+        </div>
+    </section>
+    <section id="PROJECT-PAGE" class="hidden">
+        <h1>PROJECT PAGE</h1>
+        <h2>PROJECT ONE</h2>
+        <h3>PHOTOGRAPHING</h3>
+        <img src="lilian.jpg" alt="Project Image 1">
+        <img src="jjj.jpg" alt="Project Image 2">
+        <img src="abebo.jpg" alt="Project Image 3">
+    </section>
+    <section id="contact-me" class="hidden">
+        <h1>Contact Me</h1>
+        <form class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 TECHNOTRONIC GENE Website</p>
+</footer>
+
+<script>
+    function showSection(id) {
+        document.querySelectorAll('main section').forEach(section => {
+            section.classList.add('hidden');
+        });
+        document.getElementById(id).classList.remove('hidden');
+    }
+
+    function toggleSection(id) {
+        const section = document.getElementById(id);
+        if (section.classList.contains('hidden')) {
+            section.classList.remove('hidden');
+        } else {
+            section.classList.add('hidden');
+        }
+    }
+</script>
+
+</body>
+</html>
